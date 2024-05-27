@@ -1,6 +1,5 @@
 @Entity
 public class Transaction {
-
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
@@ -13,10 +12,8 @@ public class Transaction {
     private Double amount;
 
     private LocalDateTime timestamp;
-
-    // Getters and setters
 }
 
 public enum TransactionType {
-    DEPOSIT, WITHDRAWAL
+    DEPOSIT, WITHDRAW
 }
